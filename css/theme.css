@@ -1,0 +1,133 @@
+/* ===========================
+   MODE SOMBRE
+=========================== */
+
+.dark {
+
+    --background-color: #111827;
+
+    --surface-color: #1f2937;
+
+    --text-color: #f9fafb;
+
+    --primary-color: #3b82f6;
+
+    --secondary-color: #1e3a8a;
+
+    --border-color: #374151;
+
+}
+
+
+/* ===========================
+   TRANSITION DES COULEURS
+=========================== */
+
+body {
+
+    transition: 
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+}
+
+
+/* ===========================
+   ELEMENTS EN MODE SOMBRE
+=========================== */
+
+.dark header {
+
+    background-color: var(--secondary-color);
+
+}
+
+
+.dark .team-container article,
+.dark .projects-container article {
+
+    background-color: var(--surface-color);
+
+}
+
+
+.dark input,
+.dark textarea {
+
+    background-color: #374151;
+
+    color: white;
+
+    border-color: var(--border-color);
+
+}
+
+
+.dark footer {
+
+    background-color: #020617;
+
+}
+/* ===========================
+   MODE SOMBRE
+=========================== */
+
+body.dark {
+
+    background-color: #121212;
+    color: white;
+
+}
+
+
+body.dark header {
+
+    background-color: #1f1f1f;
+
+}
+
+
+body.dark section {
+
+    background-color: #1e1e1e;
+
+}
+
+
+body.dark a {
+
+    color: #90caf9;
+
+}
+
+
+body.dark button {
+
+    background-color: #333;
+    color: white;
+
+}
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark header {
+    background-color: #222;
+}
+
+body.dark section {
+    background-color: #1a1a1a;
+}
+
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+    color: white;
+}
+
+body.dark button {
+    background-color: #444;
+    color: white;
+}
