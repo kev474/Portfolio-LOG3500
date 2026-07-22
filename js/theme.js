@@ -1,21 +1,29 @@
-console.log("theme.js chargé");
+console.log("theme.js charge");
 
 const themeButton = document.getElementById("themeButton");
 
-themeButton.addEventListener("click", function () {
+if (themeButton) {
 
-    document.body.classList.toggle("dark");
+    themeButton.addEventListener("click", function () {
 
-    console.log("Classe actuelle :", document.body.className);
+        document.body.classList.toggle("dark");
 
-    if (document.body.classList.contains("dark")) {
+        console.log(
+            "Classe actuelle :",
+            document.body.className
+        );
 
-        themeButton.textContent = "☀️ Mode clair";
 
-    } else {
+        if (document.body.classList.contains("dark")) {
 
-        themeButton.textContent = "🌙 Mode sombre";
+            themeButton.textContent = "Mode clair";
 
-    }
+        } else {
 
-});
+            themeButton.textContent = "Mode sombre";
+
+        }
+
+    });
+
+}
