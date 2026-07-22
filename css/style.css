@@ -308,3 +308,68 @@ footer {
     padding:2rem;
 
 }
+/* ===========================
+   ACCESSIBILITE
+=========================== */
+
+
+/* Focus clavier */
+:focus {
+
+    outline: 3px solid var(--primary-color);
+
+    outline-offset: 3px;
+
+}
+
+
+/* Elements interactifs */
+
+button,
+a,
+input,
+textarea {
+
+    transition: all 0.3s ease;
+
+}
+
+
+/* Boutons accessibles */
+
+button:hover {
+
+    opacity: 0.85;
+
+}
+
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+
+    outline: 3px solid var(--primary-color);
+
+}
+
+
+
+/* Images optimisées */
+
+img {
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+/* Texte lisible */
+
+p {
+
+    line-height:1.6;
+
+}

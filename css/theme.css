@@ -2,62 +2,62 @@
    MODE SOMBRE
 =========================== */
 
+
 body.dark {
 
-    --background-color: #121212;
+    --background-color:#121212;
 
-    --surface-color: #1e1e1e;
+    --surface-color:#1e1e1e;
 
-    --text-color: #ffffff;
+    --text-color:#ffffff;
 
-    --primary-color: #3f51b5;
+    --primary-color:#90caf9;
 
-    --secondary-color: #222222;
+    --secondary-color:#222222;
 
-    --border-color: #444444;
+    --border-color:#555555;
 
 }
 
 
-/* ===========================
-   APPLICATION DU THEME
-=========================== */
+/* Transition globale */
 
 body {
 
     transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+
+    background-color .3s ease,
+
+    color .3s ease;
 
 }
 
 
-body.dark header {
-
-    background-color: var(--secondary-color);
-
-}
-
+/* Sections */
 
 body.dark section {
 
-    background-color: var(--background-color);
+    background-color:var(--surface-color);
 
 }
 
 
-body.dark .team-container article,
-body.dark .projects-container article {
+/* Cartes */
 
-    background-color: var(--surface-color);
+body.dark article {
+
+    background-color:#1e1e1e;
 
 }
 
+
+/* Formulaire */
 
 body.dark input,
+
 body.dark textarea {
 
-    background-color: #333;
+    background-color:#333;
 
     color:white;
 
@@ -66,17 +66,21 @@ body.dark textarea {
 }
 
 
-body.dark footer {
+/* Boutons */
 
-    background-color:#000;
+body.dark button {
+
+    background-color:#333;
+
+    color:white;
 
 }
 
 
-body.dark button {
+/* Footer */
 
-    background-color:#444;
+body.dark footer {
 
-    color:white;
+    background-color:#000;
 
 }
