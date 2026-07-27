@@ -1,30 +1,54 @@
 function Equipe() {
 
   const membres = [
-    "Membre 1",
-    "Membre 2",
-    "Membre 3"
+    {
+      nom: "Rachel ST JEAN",
+      role: "Développement React (Frontend)"
+    },
+    {
+      nom: "Kervins Lucien HERIVEAUX",
+      role: "Intégration HTML / CSS"
+    },
+    {
+      nom: "Djelissa CESAR",
+      role: "Gestion de la base de données"
+    }
   ];
 
 
   return (
+
     <section>
 
       <h1>Notre équipe</h1>
 
-      <ul>
+
+      <div className="team-container">
 
         {membres.map((membre, index) => (
-          <li key={index}>
-            {membre}
-          </li>
+
+          <div className="team-card" key={index}>
+
+            <h2>
+              {membre.nom}
+            </h2>
+
+            <p>
+              {membre.role}
+            </p>
+
+          </div>
+
         ))}
 
-      </ul>
+      </div>
+
 
     </section>
+
   );
 
 }
+
 
 export default Equipe;

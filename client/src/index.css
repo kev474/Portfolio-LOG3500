@@ -38,9 +38,7 @@ body {
 
 
 .navbar h2 {
-
   margin: 0;
-
 }
 
 
@@ -83,17 +81,18 @@ body {
 
   cursor: pointer;
 
-  background:white;
+  background: white;
 
-  color:#6c5ce7;
+  color: #6c5ce7;
 
-  font-weight:bold;
+  font-weight: bold;
 
 }
 
 
+
 /* =========================
-   PAGES
+   PAGES GENERALES
 ========================= */
 
 
@@ -117,7 +116,7 @@ h1 {
 
 h2 {
 
-  margin-bottom:20px;
+  margin-bottom: 15px;
 
 }
 
@@ -130,164 +129,216 @@ h2 {
 
 section > div {
 
-  display:flex;
+  display: flex;
 
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 
-  justify-content:center;
+  justify-content: center;
 
-  gap:25px;
+  gap: 25px;
 
 }
-
 
 
 .project-card {
 
-  width:320px;
+  width: 320px;
 
-  padding:25px;
+  padding: 25px;
 
-  background:white;
+  background: white;
 
-  border-radius:15px;
+  border-radius: 15px;
 
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
 
   box-shadow:
   0 5px 15px rgba(0,0,0,0.1);
 
-  transition:0.3s;
+  transition: 0.3s;
 
 }
-
 
 
 .project-card:hover {
 
-  transform:translateY(-5px);
+  transform: translateY(-5px);
 
 }
-
 
 
 .project-card h3 {
 
-  color:#6c5ce7;
+  color: #6c5ce7;
 
 }
-
 
 
 .project-card p {
 
-  margin:12px 0;
+  margin: 12px 0;
 
 }
-
 
 
 .project-card a {
 
-  display:inline-block;
+  display: inline-block;
 
-  margin-top:15px;
+  margin-top: 15px;
 
-  padding:10px 18px;
+  padding: 10px 18px;
 
-  background:#6c5ce7;
+  background: #6c5ce7;
 
-  color:white;
+  color: white;
 
-  text-decoration:none;
+  text-decoration: none;
 
-  border-radius:8px;
+  border-radius: 8px;
 
 }
 
 
-
 .project-card a:hover {
 
-  background:#5849c4;
+  background: #5849c4;
 
 }
 
 
 
 /* =========================
-   CONTACT FORM
+   EQUIPE
+========================= */
+
+
+.team-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 25px;
+
+}
+
+
+.team-card {
+
+  width: 300px;
+
+  padding: 25px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  border: 1px solid #ddd;
+
+  box-shadow:
+  0 5px 15px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+
+}
+
+
+.team-card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+
+.team-card h2 {
+
+  color: #6c5ce7;
+
+  font-size: 22px;
+
+}
+
+
+.team-card p {
+
+  font-size: 16px;
+
+}
+
+
+
+/* =========================
+   CONTACT
 ========================= */
 
 
 form {
 
-  max-width:450px;
+  max-width: 450px;
 
-  margin:auto;
+  margin: auto;
 
-  display:flex;
+  display: flex;
 
-  flex-direction:column;
+  flex-direction: column;
 
 }
-
 
 
 input,
 textarea {
 
-  width:100%;
+  width: 100%;
 
-  padding:12px;
+  padding: 12px;
 
-  margin:10px 0;
+  margin: 10px 0;
 
-  border-radius:8px;
+  border-radius: 8px;
 
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
 
-  font-size:16px;
+  font-size: 16px;
 
 }
-
 
 
 textarea {
 
-  height:120px;
+  height: 120px;
 
-  resize:none;
+  resize: none;
 
 }
-
 
 
 form button {
 
-  padding:12px;
+  padding: 12px;
 
-  margin-top:10px;
+  margin-top: 10px;
 
-  border:none;
+  border: none;
 
-  border-radius:8px;
+  border-radius: 8px;
 
-  background:#6c5ce7;
+  background: #6c5ce7;
 
-  color:white;
+  color: white;
 
-  font-size:16px;
+  font-size: 16px;
 
-  cursor:pointer;
+  cursor: pointer;
 
 }
 
 
-
 form button:hover {
 
-  background:#5849c4;
+  background: #5849c4;
 
 }
 
@@ -300,15 +351,15 @@ form button:hover {
 
 footer {
 
-  margin-top:auto;
+  margin-top: auto;
 
-  padding:20px;
+  padding: 20px;
 
-  text-align:center;
+  text-align: center;
 
-  background:#222;
+  background: #222;
 
-  color:white;
+  color: white;
 
 }
 
@@ -321,47 +372,52 @@ footer {
 
 .dark {
 
-  background:#181818;
+  background: #181818;
 
-  color:white;
-
-}
-
-
-
-.dark .project-card {
-
-  background:#242424;
-
-  color:white;
-
-  border-color:#444;
+  color: white;
 
 }
 
+
+.dark .project-card,
+.dark .team-card {
+
+  background: #242424;
+
+  color: white;
+
+  border-color: #444;
+
+}
 
 
 .dark h1,
 .dark h2,
 .dark h3 {
 
-  color:white;
+  color: white;
 
 }
 
+
+.dark .team-card h2,
+.dark .project-card h3 {
+
+  color: #c084fc;
+
+}
 
 
 .dark input,
 .dark textarea {
 
-  background:#333;
+  background: #333;
 
-  color:white;
+  color: white;
 
-  border-color:#555;
+  border-color: #555;
 
 }
-
 
 
 
@@ -375,48 +431,49 @@ footer {
 
   .navbar {
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:20px;
+    gap: 20px;
 
-    padding:20px;
+    padding: 20px;
 
   }
 
 
   .navbar div {
 
-    flex-direction:column;
+    flex-direction: column;
 
-    gap:15px;
+    gap: 15px;
 
   }
 
 
   .navbar button {
 
-    margin-left:0;
+    margin-left: 0;
 
   }
 
 
   section {
 
-    padding:20px;
+    padding: 20px;
 
   }
 
 
   h1 {
 
-    font-size:30px;
+    font-size: 30px;
 
   }
 
 
-  .project-card {
+  .project-card,
+  .team-card {
 
-    width:90%;
+    width: 90%;
 
   }
 
