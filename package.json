@@ -1,13 +1,13 @@
 {
-  "dependencies": {
-    "express": "^5.2.1"
-  }
-}
-
-{
+  "name": "portfolio-log3500",
+  "version": "1.0.0",
+  "description": "Portfolio Professionnel Dynamique Full-Stack",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "cd client && npm run build"
   },
+  "type": "commonjs",
   "dependencies": {
     "express": "^5.2.1"
   }

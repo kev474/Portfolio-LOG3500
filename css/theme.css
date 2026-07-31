@@ -1,0 +1,82 @@
+/* ===========================
+   MODE SOMBRE
+=========================== */
+
+body.dark {
+
+    --background-color: #121212;
+
+    --surface-color: #1e1e1e;
+
+    --text-color: #ffffff;
+
+    --primary-color: #3f51b5;
+
+    --secondary-color: #222222;
+
+    --border-color: #444444;
+
+}
+
+
+/* ===========================
+   APPLICATION DU THEME
+=========================== */
+
+body {
+
+    transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+}
+
+
+body.dark header {
+
+    background-color: var(--secondary-color);
+
+}
+
+
+body.dark section {
+
+    background-color: var(--background-color);
+
+}
+
+
+body.dark .team-container article,
+body.dark .projects-container article {
+
+    background-color: var(--surface-color);
+
+}
+
+
+body.dark input,
+body.dark textarea {
+
+    background-color: #333;
+
+    color:white;
+
+    border-color:var(--border-color);
+
+}
+
+
+body.dark footer {
+
+    background-color:#000;
+
+}
+
+
+body.dark button {
+
+    background-color:#444;
+
+    color:white;
+
+}
