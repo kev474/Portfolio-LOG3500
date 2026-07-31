@@ -1,54 +1,53 @@
 function Equipe() {
-
   const membres = [
     {
-      nom: "Rachel ST JEAN",
-      role: "Développement React (Frontend)"
+      nom: "Kervins Lucien Heriveaux",
+      role: "Développeur",
+      image: "/images/kervins.jpg",
+      bio: "Développeur responsable de la conception et de l'intégration des fonctionnalités du portfolio."
     },
     {
-      nom: "Kervins Lucien HERIVEAUX",
-      role: "Intégration HTML / CSS"
+      nom: "Djelissa Cesar",
+      role: "Développeur",
+      image: "/images/djelissa.jpg",
+      bio: "Développeur responsable de la logique applicative et des fonctionnalités du projet."
     },
     {
-      nom: "Djelissa CESAR",
-      role: "Gestion de la base de données"
+      nom: "Rachel Saint-Jean",
+      role: "Designer",
+      image: "/images/rachel.jpg",
+      bio: "Responsable du design, de l'organisation visuelle et de l'expérience utilisateur."
     }
   ];
 
-
   return (
-
-    <section>
+    <section className="equipe">
 
       <h1>Notre équipe</h1>
 
+      <div className="equipe-container">
 
-      <div className="team-container">
+        {membres.map((membre) => (
+          <article className="membre-card" key={membre.nom}>
 
-        {membres.map((membre, index) => (
+            <img
+              src={membre.image}
+              alt={`Photo de ${membre.nom}`}
+            />
 
-          <div className="team-card" key={index}>
+            <h2>{membre.nom}</h2>
 
-            <h2>
-              {membre.nom}
-            </h2>
+            <h3>{membre.role}</h3>
 
-            <p>
-              {membre.role}
-            </p>
+            <p>{membre.bio}</p>
 
-          </div>
-
+          </article>
         ))}
 
       </div>
 
-
     </section>
-
   );
-
 }
-
 
 export default Equipe;
